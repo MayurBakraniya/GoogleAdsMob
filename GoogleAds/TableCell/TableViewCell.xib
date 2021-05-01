@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableViewCell" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="GoogleAds" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzp-Tg-pDQ">
+                        <rect key="frame" x="2" y="2" width="316" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aiv-KG-kGY">
+                                <rect key="frame" x="15" y="10" width="45.5" height="20"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZqF-IA-1wH">
+                                <rect key="frame" x="281" y="12" width="20" height="16.5"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Rms-b9-qPS"/>
+                                    <constraint firstAttribute="height" constant="20" id="efM-RQ-psO"/>
+                                </constraints>
+                                <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium" renderingMode="template"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZqF-IA-1wH" firstAttribute="top" secondItem="Aiv-KG-kGY" secondAttribute="top" id="8R3-di-KKg"/>
+                            <constraint firstItem="ZqF-IA-1wH" firstAttribute="centerY" secondItem="Aiv-KG-kGY" secondAttribute="centerY" id="JCQ-Kv-j2q"/>
+                            <constraint firstItem="Aiv-KG-kGY" firstAttribute="top" secondItem="gzp-Tg-pDQ" secondAttribute="top" constant="10" id="c21-NM-P1g"/>
+                            <constraint firstItem="ZqF-IA-1wH" firstAttribute="bottom" secondItem="Aiv-KG-kGY" secondAttribute="bottom" id="hVg-EO-sKd"/>
+                            <constraint firstAttribute="trailing" secondItem="ZqF-IA-1wH" secondAttribute="trailing" constant="15" id="ks9-E5-5yC"/>
+                            <constraint firstAttribute="bottom" secondItem="Aiv-KG-kGY" secondAttribute="bottom" constant="10" id="n3A-6k-DCi"/>
+                            <constraint firstItem="Aiv-KG-kGY" firstAttribute="leading" secondItem="gzp-Tg-pDQ" secondAttribute="leading" constant="15" id="xyM-Do-CKr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gzp-Tg-pDQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="1I2-Ch-Aox"/>
+                    <constraint firstAttribute="bottom" secondItem="gzp-Tg-pDQ" secondAttribute="bottom" constant="2" id="d7S-hn-LcW"/>
+                    <constraint firstAttribute="trailing" secondItem="gzp-Tg-pDQ" secondAttribute="trailing" constant="2" id="jpN-S9-Ke4"/>
+                    <constraint firstItem="gzp-Tg-pDQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="mpn-16-brL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbl" destination="Aiv-KG-kGY" id="z4g-Kb-epb"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+    </resources>
+</document>
