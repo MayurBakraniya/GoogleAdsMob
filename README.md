@@ -2,4 +2,4 @@
 Banner , Interstitial , Native , Rewarded Ads
 
 
-![GoogleAdsMob](demo/demo.gif)
+![Farmers Market Finder Demo](demo/demo.gif)
